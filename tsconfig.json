@@ -1,23 +1,40 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "outDir": "out",
-        "lib": [
-            "es6"
-        ],
-        "sourceMap": true,
-        "rootDir": "src",
-        /* Strict Type-Checking Option */
-        "strict": true,   /* enable all strict type-checking options */
-        /* Additional Checks */
-        "noUnusedLocals": true /* Report errors on unused locals. */
-        // "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
-        // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-        // "noUnusedParameters": true,  /* Report errors on unused parameters. */
-    },
-    "exclude": [
-        "node_modules",
-        ".vscode-test"
-    ]
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vscode", "node", "mocha"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", ".history/**"]
+  // "exclude": ["**/*.test.ts", "node_modules", "test/**", ".history/**"]
+  // "compilerOptions": {
+  //   "module": "commonjs",
+  //   "target": "ESNext",
+  //   "outDir": "out",
+  //   "lib": ["ESNext"],
+  //   "sourceMap": true,
+  //   "rootDir": "src",
+  //   /* Strict Type-Checking Option */
+  //   "strict": true /* enable all strict type-checking options */,
+  //   /* Additional Checks */
+  //   "noUnusedLocals": true /* Report errors on unused locals. */,
+  //   // "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
+  //   // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
+  //   // "noUnusedParameters": true,  /* Report errors on unused parameters. */
+  //   "typeRoots": ["node_modules/@types"]
+  // },
+  // "exclude": ["node_modules", ".vscode-test"]
 }
